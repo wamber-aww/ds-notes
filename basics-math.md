@@ -100,5 +100,5 @@ Minimal math and statistics concepts behind the basics of machine learning
 - The *test MSE* increases or decreases based on the rate of change of variance and bias
 
 ## References
-1. An Introduction to Statistical Learning
-2. Hands-on Machine Learning with Scikit-Learn and TensorFlow
+1. [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+2. [Hands-on Machine Learning with Scikit-Learn and TensorFlow](http://shop.oreilly.com/product/0636920052289.do)
