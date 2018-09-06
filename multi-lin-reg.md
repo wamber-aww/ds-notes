@@ -19,6 +19,7 @@
 	- We choose *&beta;<sub>0</sub>*, *&beta;<sub>1</sub>*, ..., *&beta;<sub>p</sub>* to minimize *residual sum of squares (RSS)*
 	- The estimates *&beta;<sub>0</sub>'*, *&beta;<sub>1</sub>'*, ..., *&beta;<sub>p</sub>'* are the multiple least squares regression coefficient estimates, as shown below
 	<p align = "center"> <img src="figures/multi-lin-reg-01.png" height="105px"/> </p>
+	
 	- The slope term is interpreted as the unit change in *y* with a one-unit increase of the coefficient, **holding the rest of the coefficents constant**
 - In simple linear regression, only one coefficient is considered for its effect on *y*, while the rest are ignored; in multiple linear regression, only one coefficient is considered for its effect on *y* at a time, while the rest are fixed
 - Muliple linear regression can reveal if the seemingly significant correlation of a predictor seen in a simple linear regression still holds true when adjusted for confounders
@@ -30,6 +31,7 @@
 	- *Alternative hypothesis H<sub>a</sub>*: There is some relationship between *X* and *Y* (at least one *&beta;<sub>j</sub> ≠ 0*)
 - The *F-statistic* to test if *H<sub>0</sub>* is correct is computed as 
 	<p align="center"> <img src="figures/multi-lin-reg-02.png" height="45px"/> </p> 
+	
 	- *E{RSS / (n - p - 1)} = &sigma;<sup>2</sup>* when the linear model assumpions are correct
 	- *E{(TSS - RSS) / p} = &sigma;<sup>2</sup>* when *H<sub>0</sub>* is correct
 	- *F ~ 1* when *H<sub>0</sub>* is true; *F > 1* when *H<sub>a</sub>* is true
@@ -90,6 +92,7 @@ The most common measurement of model fit is *residual standard error (RSE)* and 
 
 -  The *RSE* is defined as
 	<p align="center"> <img src="figures/multi-lin-reg-04.png" height="50px"/> </p> 
+	
 	- Models with more variables can have a higher *RSE* if the decrease in *RSS* is small compared to the increase in *p*
 
 - Graphical summaries can also be useful in visualizing the characteristics of the model fit
@@ -100,6 +103,7 @@ The most common measurement of model fit is *residual standard error (RSE)* and 
 - Once a multiple linear regression model is fit, new predictors can be plugged into the model to predict responses
 	- The predicted response takes the form of 
 *<p align = "center"> Y' = &beta;<sub>0</sub>' + &beta;<sub>1</sub>'X<sub>1</sub> + ... + &beta;<sub>p</sub>'X<sub>p</sub> </p>*
+
 	- This is only an estimate of the true form
 *<p align = "center"> f(X) = &beta;<sub>0</sub> + &beta;<sub>1</sub>X<sub>1</sub> + ... + &beta;<sub>p</sub>X<sub>p</sub> </p>*
 
